@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230829 12:17:38.320" rpa="false" schemaversion="3">
+<suite id="s1" name="Learningautomation" source="D:\Projects\learningautomation">
+<suite id="s1-s1" name="4 Test Cases" source="D:\Projects\learningautomation\4_test_cases">
+<suite id="s1-s1-s1" name="Bt3 Tc" source="D:\Projects\learningautomation\4_test_cases\bt3_tc.robot">
+<test id="s1-s1-s1-t1" name="Automation Bài tập 3" line="7">
+<kw name="Verify text MSB" library="bt3_keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.google.com</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230829 12:17:39.207" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" starttime="20230829 12:17:39.207" endtime="20230829 12:17:45.552"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${google_textbox}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230829 12:17:45.553" endtime="20230829 12:17:45.570"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${google_textbox}</arg>
+<arg>MSB</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230829 12:17:45.571" level="INFO">Typing text 'MSB' into text field '//textarea[@id='APjFqb']'.</msg>
+<status status="PASS" starttime="20230829 12:17:45.570" endtime="20230829 12:17:45.620"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${google_textbox}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230829 12:17:45.621" level="INFO">Sending key(s) ('ENTER',) to //textarea[@id='APjFqb'] element.</msg>
+<msg timestamp="20230829 12:17:45.900" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230829 12:17:45.900" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230829 12:17:45.621" endtime="20230829 12:17:47.412"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${first_result}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230829 12:17:47.412" endtime="20230829 12:17:47.427"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${first_result}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230829 12:17:47.428" level="INFO">Clicking element '//h3[normalize-space()='MSB']'.</msg>
+<status status="PASS" starttime="20230829 12:17:47.428" endtime="20230829 12:17:51.710"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${close_btn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230829 12:17:51.710" endtime="20230829 12:17:51.728"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${close_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230829 12:17:51.729" level="INFO">Clicking element '//source[@srcset='/documents/20121/6432149/Mobile+%281%29-min.png/45e15e61-e0b2-362a-930b-6f1e661a4f9d?t=1681377016095']//ancestor::a//following::span[@class ='pop-up-porlet-close-btn']'.</msg>
+<status status="PASS" starttime="20230829 12:17:51.728" endtime="20230829 12:17:51.762"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230829 12:17:56.776" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230829 12:17:51.762" endtime="20230829 12:17:56.776"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${text_matching_card}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230829 12:17:56.776" endtime="20230829 12:17:56.793"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${text_matching_card}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230829 12:17:56.798" level="INFO">Current page contains element '//div[@data-lfr-editable-id = 'banner-title' and contains(text(), 'Chọn thẻ phù hợp với bạn')]'.</msg>
+<status status="PASS" starttime="20230829 12:17:56.793" endtime="20230829 12:17:56.798"/>
+</kw>
+<status status="PASS" starttime="20230829 12:17:39.206" endtime="20230829 12:17:56.798"/>
+</kw>
+<doc>Mở trang google, search MSB, đóng pop-up và verify text</doc>
+<tag>bt3</tag>
+<tag>btb1</tag>
+<status status="PASS" starttime="20230829 12:17:39.206" endtime="20230829 12:17:56.798"/>
+</test>
+<status status="PASS" starttime="20230829 12:17:38.337" endtime="20230829 12:17:56.799"/>
+</suite>
+<status status="PASS" starttime="20230829 12:17:38.335" endtime="20230829 12:17:56.800"/>
+</suite>
+<status status="PASS" starttime="20230829 12:17:38.322" endtime="20230829 12:17:56.801"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">bt3</stat>
+<stat pass="1" fail="0" skip="0">btb1</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Learningautomation">Learningautomation</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="4 Test Cases">Learningautomation.4 Test Cases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Bt3 Tc">Learningautomation.4 Test Cases.Bt3 Tc</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
