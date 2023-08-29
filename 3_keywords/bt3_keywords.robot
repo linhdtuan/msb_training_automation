@@ -14,4 +14,4 @@ Verify text MSB
     Click Element    ${close_btn}
     Sleep    5s
     Wait Until Element Is Visible    ${text_matching_card}
-    Page Should Contain Element    ${text_matching_card}    
+    Page Should Contain Element    ${text_matching_card}
